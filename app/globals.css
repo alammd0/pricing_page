@@ -6,10 +6,11 @@
   --color-primary : #0052CC;
   --color-secondary : #0D1117;
   --color-hero : #171E25;
-  --color-navbar : #D8D7D3
-}
+  --color-navbar : #D8D7D3;
+  --animate-loop: loop 20s linear infinite;
 
-
-.bg-image{
-  background-image: var();
+  @keyframes loop {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); } 
+  }
 }

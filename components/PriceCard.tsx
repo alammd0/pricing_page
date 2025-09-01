@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function PriceCard({
   icon,
   text,
@@ -5,10 +7,10 @@ export default function PriceCard({
   features,
   mark,
 }: {
-  icon: any;
+  icon: React.ReactNode;
   text: string;
   price: string;
-  features: { icon: any; label: string }[];
+  features: { icon: React.ReactNode; label: string }[];
   mark?: boolean;
 }) {
   return (
