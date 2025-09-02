@@ -17,12 +17,12 @@ export default function HeroPage() {
     <>
       <div className="bg-hero">
         <div className="relative">
-          <div className="bg-[url('/image.png')] w-11/12 mx-auto bg-cover bg-center items-center justify-center flex h-screen z-50">
+          <div className="bg-[url('/image.png')] relative w-11/12 mx-auto bg-cover bg-center md:items-center md:justify-center flex h-screen pt-40 md:pt-0 pb-20">
             <div className="flex flex-col gap-10">
-              <h1 className="text-8xl/30 text-white/40 font-bold text-center w-9/12 mx-auto font-sans">
+              <h1 className="md:text-8xl/30 text-5xl/15 text-white/40 font-bold text-center w-fit md:w-9/12 mx-auto font-sans">
                 Choose a plan that's right for you.
               </h1>
-              <p className="text-xl font-semibold w-5/12 mx-auto font-sans text-center text-white/80">
+              <p className="text-xl font-semibold md:w-5/12 mx-auto font-sans text-center text-white/80">
                 We're here to help with any questions you have about plans,
                 pricing, and supported features.
               </p>
@@ -48,7 +48,7 @@ export default function HeroPage() {
       {/* here Pricing Card Section */}
       <div className="bg-secondary pb-10 pt-10">
         <div className="w-11/12 mx-auto flex justify-center items-center">
-          <div className="flex gap-10">
+          <div className="flex flex-col lg:flex-row md:flex-wrap gap-10 items-center justify-center">
             {/* card - 01 */}
             <PriceCard
               icon={<MdDirectionsBike />}
@@ -144,12 +144,11 @@ export default function HeroPage() {
 
 
         {/* All account plans include: */}
-
         <div className="bg-secondary px-4 py-28">
           <div className="flex flex-col gap-4 w-11/12 mx-auto text-white">
              <h2 className="text-2xl font-bold text-white/30">All account plans include:</h2>
 
-             <div className="grid grid-cols-3 gap-10">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                <div className="border-l-1 border-white/30 pl-5">
                   <HostProject 
@@ -157,7 +156,7 @@ export default function HeroPage() {
                     paragraph="Hosted projects don’t count against your plan limits, so you can build as many as you want when you host with Webflow."
                    />
 
-                   <div className="h-[1px] bg-white/10 rounded-lg mt-10"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-16"></div>
                    <div className="h-[1px] bg-white/10 rounded-lg mt-1"></div>
                    
                </div>
@@ -168,7 +167,7 @@ export default function HeroPage() {
                     paragraph="You can invite up to 10 team members to your account. You can also invite team members to individual projects."
                    />
 
-                   <div className="h-[1px] bg-white/10 rounded-lg mt-10"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-16"></div>
                    <div className="h-[1px] bg-white/10 rounded-lg mt-1"></div>
                </div>
 
@@ -178,7 +177,7 @@ export default function HeroPage() {
                     paragraph="You can make up to 100 requests per day. You can also make up to 10 requests per minute."
                    />
 
-                   <div className="h-[1px] bg-white/10 rounded-lg mt-10"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-16"></div>
                    <div className="h-[1px] bg-white/10 rounded-lg mt-1"></div>
                </div>
 
@@ -187,6 +186,10 @@ export default function HeroPage() {
                     heading="Native source files included"
                     paragraph="Webflow includes native source files like HTML, CSS, and JavaScript. You can also use other source files like React, Vue, and Angular."
                    />
+
+                   
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-13 lg:hidden md:block"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-1 lg:hidden md:block"></div>
                </div>
 
                <div className="border-l-1 border-white/30 pl-5">
@@ -194,6 +197,9 @@ export default function HeroPage() {
                     heading="Free stock photos"
                     paragraph="Webflow includes free stock photos that you can use in your projects."
                     />
+
+                    <div className="h-[1px] bg-white/10 rounded-lg mt-10 lg:hidden md:hidden"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-1 lg:hidden md:hidden"></div>
                </div>
 
                <div className="border-l-1 border-white/30 pl-5">
@@ -201,6 +207,8 @@ export default function HeroPage() {
                      heading="Ongoing support & maintenance"
                      paragraph="We offer ongoing support and maintenance for your account. We'll respond to your questions and help you get the most out of Webflow."   
                   />
+                  {/* <div className="h-[1px] bg-white/10 rounded-lg mt-5 hidden lg:hidden md:"></div>
+                   <div className="h-[1px] bg-white/10 rounded-lg mt-1 hidden lg:hidden md:block"></div> */}
                </div>
 
              </div>
@@ -211,9 +219,9 @@ export default function HeroPage() {
         <div className="bg-secondary pb-18">
           <div className="w-11/12 mx-auto bg-primary px-10 py-30 rounded-lg">
             <div className="flex items-center justify-center flex-col gap-4 text-white">
-               <h1 className="text-6xl font-bold max-w-5xl text-center leading-[70px]">Move even faster with Codebase UI Kit for Webflow.</h1>
+               <h1 className="md:text-6xl text-3xl font-bold max-w-5xl text-center md:leading-[70px]">Move even faster with Codebase UI Kit for Webflow.</h1>
                
-               <div className="flex gap-10 justify-center">
+               <div className="flex md:gap-10 justify-center flex-col lg:flex-row md:flex-row gap-4">
                    <button className="bg-white/20 text-white/80 px-5 py-2 rounded-lg text-[14px] font-semibold hover:scale-95 transition-all transform-content duration-75 cursor-pointer">
                        Take the Tour
                    </button> 

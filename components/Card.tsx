@@ -8,7 +8,8 @@ export default function Card({img, name, username, about, date, time} : {img: st
                     <Image
                         src={img}
                         alt="profile picture"
-                        fill
+                        height={50}
+                        width={50}
                         className="rounded-full object-cover"
                     />
                 </div>
