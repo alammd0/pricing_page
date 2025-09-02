@@ -46,7 +46,7 @@ export default function HeroPage() {
       </div>
 
       {/* here Pricing Card Section */}
-      <div id="pricing" className="bg-secondary pb-10 pt-10">
+      <div id="pricing" className="bg-secondary pb-10 pt-10 scroll-mt-20">
         <div className="w-11/12 mx-auto flex justify-center items-center">
           <div className="flex flex-col lg:flex-row md:flex-wrap gap-10 items-center justify-center">
             {/* card - 01 */}
@@ -108,7 +108,7 @@ export default function HeroPage() {
       </div>
 
       {/* Slider Cards Section */}
-        <div id="slider" className="overflow-hidden w-full bg-hero p-10 py-20">
+        <div id="slider" className="overflow-hidden w-full bg-hero p-10 py-20 scroll-mt-20">
           <div className=" flex gap-10  animate-loop will-change-transform [transform-style:preserve-3d]">
             {
               cardsData.map((item, index) => {
@@ -144,7 +144,7 @@ export default function HeroPage() {
 
 
         {/* All account plans include: */}
-        <div id="product" className="bg-secondary px-4 py-28">
+        <div id="product" className="bg-secondary px-4 py-28 scroll-mt-20">
           <div className="flex flex-col gap-4 w-11/12 mx-auto text-white">
              <h2 className="text-2xl font-bold text-white/30">All account plans include:</h2>
 
